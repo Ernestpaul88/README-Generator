@@ -7,6 +7,7 @@
 Application used for generating a README using node and the inquirer package.
 
 ## Table of Contents
+
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -28,4 +29,4 @@ To start the project you need to run 'node index' from the root directory. Check
 ## Questions:
 
 - You can email me at ernestpaul88@gmail.com if you have any questions.
-- Github: [ernestpaul88](https://github.com/ernestpaul88)
+- Github: [Ernest Paul Github](https://github.com/ernestpaul88)

@@ -8,10 +8,12 @@ Application used for generating a README using node and the inquirer package.
 
 ## Table of Contents
 
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Questions](#questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#Contributing)
+- [Testing](#testing)
+- [Questions](#questions)
 
 ## Installation:
 
@@ -26,7 +28,15 @@ To start the project you need to run 'node index' from the root directory. Check
 [License: MIT](https://choosealicense.com/licenses/mit/)  
  ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 
+## Contributing:
+
+This is where the contribution guidelines would go.
+
+## Testing:
+
+This is where testing instructions would go.
+
 ## Questions:
 
-- You can email me at ernestpaul88@gmail.com if you have any questions.
-- Github: [ernestpaul88](https://github.com/ernestpaul88)
+- You can email me at enrestpaul88@gmail.com if you have any questions.
+- Github: [Ernest Paul Github](https://github.com/ernestpaul88)

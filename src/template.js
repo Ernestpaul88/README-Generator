@@ -59,36 +59,32 @@ const generateTesting = (testing) => {
 const generateTableOfContents = (testing, contributing) => {
   if (testing && contributing) {
     return `## Table of Contents
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributing](#Contributing)
-    - [Testing](#testing)
-    - [Questions](#questions)
-    `;
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#Contributing)
+  - [Testing](#testing)
+  - [Questions](#questions)`;
   } else if (testing && !contributing) {
     return `## Table of Contents
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Testing](#testing)
-    - [Questions](#questions)
-    `;
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Testing](#testing)
+  - [Questions](#questions)`;
   } else if (contributing && !testing) {
     return `## Table of Contents
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributing](#Contributing)
-    - [Questions](#questions)
-    `;
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#Contributing)
+  - [Questions](#questions)`;
   } else {
     return `## Table of Contents
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Questions](#questions)
-    `;
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Questions](#questions)`;
   }
 };
 
@@ -120,5 +116,5 @@ module.exports = (data) => {
   
   ## Questions:
   - You can email me at ${main.email} if you have any questions.
-  - Github: [${main.github}](https://github.com/${main.github})`;
+  - Github: [Ernest Paul Github](https://github.com/${main.github})`;
 };
