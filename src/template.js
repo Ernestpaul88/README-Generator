@@ -25,6 +25,7 @@ module.exports = (data) => {
   ## Description:
   ${data.description}
   
+  // TODO: sub section for prerequisite steps
   ## Installation:
   ${data.installation}
   
