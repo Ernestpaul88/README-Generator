@@ -58,7 +58,8 @@ const generateTesting = (testing) => {
 
 const generateTableOfContents = (testing, contributing) => {
   if (testing && contributing) {
-    return `- [Installation](#installation)
+    return `
+    - [Installation](#installation)
     - [Usage](#usage)
     - [License](#license)
     - [Contributing](#Contributing)
@@ -66,21 +67,24 @@ const generateTableOfContents = (testing, contributing) => {
     - [Questions](#questions)
     `;
   } else if (testing && !contributing) {
-    return `- [Installation](#installation)
+    return `
+    - [Installation](#installation)
     - [Usage](#usage)
     - [License](#license)
     - [Testing](#testing)
     - [Questions](#questions)
     `;
   } else if (contributing && !testing) {
-    return `- [Installation](#installation)
+    return `
+    - [Installation](#installation)
     - [Usage](#usage)
     - [License](#license)
     - [Contributing](#Contributing)
     - [Questions](#questions)
     `;
   } else {
-    return `- [Installation](#installation)
+    return `
+    - [Installation](#installation)
     - [Usage](#usage)
     - [License](#license)
     - [Questions](#questions)
@@ -102,7 +106,6 @@ module.exports = (data) => {
   ## Table of Contents 
   ${generateTableOfContents(tests, contribution)}
   
-  // TODO: sub section for prerequisite steps
   ## Installation:
   ${main.installation}
   
@@ -112,10 +115,8 @@ module.exports = (data) => {
   ## License:
   ${renderLicenseSection(license)}
   
-  // dynamically generate contributing section
   ${generateContributing(contribution)}
   
-  // dynamically generate testing section
   ${generateTesting(tests)}
   
   ## Questions:

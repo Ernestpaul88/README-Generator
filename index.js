@@ -28,7 +28,7 @@ const questions = [
       }
     },
   },
-  // TODO: Maybe consider separating out installation and creating a steps array
+
   {
     type: "input",
     name: "installation",
@@ -43,7 +43,7 @@ const questions = [
       }
     },
   },
-  // TODO: Might consider separating out usage
+
   {
     type: "input",
     name: "usage",
