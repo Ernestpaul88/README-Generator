@@ -58,7 +58,7 @@ const generateTesting = (testing) => {
 
 const generateTableOfContents = (testing, contributing) => {
   if (testing && contributing) {
-    return `
+    return `## Table of Contents
     - [Installation](#installation)
     - [Usage](#usage)
     - [License](#license)
@@ -67,7 +67,7 @@ const generateTableOfContents = (testing, contributing) => {
     - [Questions](#questions)
     `;
   } else if (testing && !contributing) {
-    return `
+    return `## Table of Contents
     - [Installation](#installation)
     - [Usage](#usage)
     - [License](#license)
@@ -75,7 +75,7 @@ const generateTableOfContents = (testing, contributing) => {
     - [Questions](#questions)
     `;
   } else if (contributing && !testing) {
-    return `
+    return `## Table of Contents
     - [Installation](#installation)
     - [Usage](#usage)
     - [License](#license)
@@ -83,7 +83,7 @@ const generateTableOfContents = (testing, contributing) => {
     - [Questions](#questions)
     `;
   } else {
-    return `
+    return `## Table of Contents
     - [Installation](#installation)
     - [Usage](#usage)
     - [License](#license)
@@ -102,8 +102,7 @@ module.exports = (data) => {
   
   ## Description:
   ${main.description}
-
-  ## Table of Contents 
+ 
   ${generateTableOfContents(tests, contribution)}
   
   ## Installation:
