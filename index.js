@@ -100,7 +100,16 @@ const questions = [
     type: "list",
     name: "license",
     message: "Choose a license for your application(Required)",
-    choices: ["MIT", "GNU", "ISC", "Apache", "None"],
+    choices: [
+      "AGPLv3",
+      "GPLv3",
+      "LGPLv3",
+      "Mozilla",
+      "Apache",
+      "MIT",
+      "Boost",
+      "None",
+    ],
     validate: (licenseInput) => {
       if (licenseInput) {
         return true;

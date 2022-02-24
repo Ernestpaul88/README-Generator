@@ -1,50 +1,124 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if (license == "None") {
+    return "";
+  } else {
+    return `![License: ${license}](https://img.shields.io/badge/license-${license}-blue)`;
+  }
+}
 
-// TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license == "None") {
+    return "";
+  } else if (license == "APLv3") {
+    return `[License: ${license}](https://choosealicense.com/licenses/agpl-3.0/)`;
+  } else if (license == "GPLv3") {
+    return `[License: ${license}](https://choosealicense.com/licenses/gpl-3.0/)`;
+  } else if (license == "LGPLv3") {
+    return `[License: ${license}](https://choosealicense.com/licenses/lgpl-3.0/)`;
+  } else if (license == "Mozilla") {
+    return `[License: ${license}](https://choosealicense.com/licenses/mpl-2.0/)`;
+  } else if (license == "Apache") {
+    return `[License: ${license}](https://choosealicense.com/licenses/apache-2.0/)`;
+  } else if (license == "MIT") {
+    return `[License: ${license}](https://choosealicense.com/licenses/mit/)`;
+  } else if (license == "Boost") {
+    return `[License: ${license}](https://choosealicense.com/licenses/bsl-1.0/)`;
+  }
+}
 
-// TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license == "None") {
+    return "";
+  } else {
+    return `${renderLicenseLink(license)}  
+    ${renderLicenseBadge(license)}`;
+  }
+}
+
+// create the contributing section or return empty string
+const generateContributing = (contributing) => {
+  if (!contributing) {
+    return "";
+  }
+  return `## Contributing:
+  ${contributing}`;
+};
+
+// create the testing section or return empty string
+const generateTesting = (testing) => {
+  if (!testing) {
+    return "";
+  }
+  return `## Testing:
+  ${testing}`;
+};
+
+const generateTableOfContents = (testing, contributing) => {
+  if (testing && contributing) {
+    return `- [Installation](#installation)
+    - [Usage](#usage)
+    - [License](#license)
+    - [Contributing](#Contributing)
+    - [Testing](#testing)
+    - [Questions](#questions)
+    `;
+  } else if (testing && !contributing) {
+    return `- [Installation](#installation)
+    - [Usage](#usage)
+    - [License](#license)
+    - [Testing](#testing)
+    - [Questions](#questions)
+    `;
+  } else if (contributing && !testing) {
+    return `- [Installation](#installation)
+    - [Usage](#usage)
+    - [License](#license)
+    - [Contributing](#Contributing)
+    - [Questions](#questions)
+    `;
+  } else {
+    return `- [Installation](#installation)
+    - [Usage](#usage)
+    - [License](#license)
+    - [Questions](#questions)
+    `;
+  }
+};
 
 module.exports = (data) => {
-  return `# ${data.title}
+  // destructure page data by section
+  const { tests, contribution, license, ...main } = data;
 
-  // TODO: May need to dynamically generate the table of contents
-  ## Table of Contents 
-  - [Description](#description)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contributing](#Contributing)
-  - [Testing](#testing)
-  - [Questions](#questions)
+  return `# ${main.title}
+  
+  ${renderLicenseBadge(license)}
   
   ## Description:
-  ${data.description}
+  ${main.description}
+
+  ## Table of Contents 
+  ${generateTableOfContents(tests, contribution)}
   
   // TODO: sub section for prerequisite steps
   ## Installation:
-  ${data.installation}
+  ${main.installation}
   
   ## Usage:
-  ${data.usage}
+  ${main.usage}
   
-  // TODO: Look into the licencse badge and stuff
   ## License:
-  ${data.license}
+  ${renderLicenseSection(license)}
   
-  // TODO: dynamically generate this section
-  ## Contributing:
-  ${data.contribution}
+  // dynamically generate contributing section
+  ${generateContributing(contribution)}
   
-  // TODO: dynamically generate this section
-  ## Testing:
-  ${data.tests}
+  // dynamically generate testing section
+  ${generateTesting(tests)}
   
   ## Questions:
-  - You can email me at ${data.email} if you have any questions.
-  - Github: [${data.github}](https://github.com/${data.github})`;
+  - You can email me at ${main.email} if you have any questions.
+  - Github: [${main.github}](https://github.com/${main.github})`;
 };
