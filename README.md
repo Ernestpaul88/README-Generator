@@ -7,11 +7,10 @@
 Application used for generating a README using node and the inquirer package.
 
 ## Table of Contents
-
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Questions](#questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Questions](#questions)
 
 ## Installation:
 
