@@ -23,7 +23,7 @@ To start the project you need to run 'node index' from the root directory. Check
 
 ## License:
 
-[License: MIT](https://choosealicense.com/licenses/mit/)  
+[License: MIT](https://choosealicense.com/licenses/mit/) 
  ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 
 ## Questions:
@@ -32,4 +32,4 @@ To start the project you need to run 'node index' from the root directory. Check
 - Github: [Ernest Paul Github](https://github.com/ernestpaul88)
 
 
-![Image Markdown](/image/20220306_234505.jpg)
+![Image Markdown](https://drive.google.com/file/d/1PoJSZpyO4nDKNTKmQRp5_BhL1w_7wSxf/view)
