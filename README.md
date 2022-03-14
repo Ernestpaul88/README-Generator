@@ -34,7 +34,4 @@ To start the project you need to run 'node index' from the root directory. Check
 - Github: [Ernest Paul Github](https://github.com/ernestpaul88)
 
 
-<<<<<<< HEAD
-![Image Markdown](https://drive.google.com/file/d/1PoJSZpyO4nDKNTKmQRp5_BhL1w_7wSxf/view)
-=======
->>>>>>> 74af39036aad6bf8b9c2aa09bce749444cc97cf8
+![Run Video](https://drive.google.com/file/d/1PoJSZpyO4nDKNTKmQRp5_BhL1w_7wSxf/view)
