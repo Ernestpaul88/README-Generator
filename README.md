@@ -33,5 +33,6 @@ To start the project you need to run 'node index' from the root directory. Check
 - You can email me at ernestpaul88@gmail.com if you have any questions.
 - Github: [Ernest Paul Github](https://github.com/ernestpaul88)
 
+## Test run 
 
-![Run Video](https://drive.google.com/file/d/1PoJSZpyO4nDKNTKmQRp5_BhL1w_7wSxf/view)
+![Ran Test](https://drive.google.com/file/d/1PoJSZpyO4nDKNTKmQRp5_BhL1w_7wSxf/view)
