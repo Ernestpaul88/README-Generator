@@ -21,6 +21,8 @@ If you already have node installed the only step for installing the project is r
 
 To start the project you need to run 'node index' from the root directory. Checkout the video to see a demonstration.
 
+![Image Markdown](/image/20220306_234505.jpg)
+
 ## License:
 
 [License: MIT](https://choosealicense.com/licenses/mit/) 
@@ -32,4 +34,7 @@ To start the project you need to run 'node index' from the root directory. Check
 - Github: [Ernest Paul Github](https://github.com/ernestpaul88)
 
 
+<<<<<<< HEAD
 ![Image Markdown](https://drive.google.com/file/d/1PoJSZpyO4nDKNTKmQRp5_BhL1w_7wSxf/view)
+=======
+>>>>>>> 74af39036aad6bf8b9c2aa09bce749444cc97cf8
