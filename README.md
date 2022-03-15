@@ -35,4 +35,4 @@ To start the project you need to run 'node index' from the root directory. Check
 
 ## Test run 
 
-![Ran Test](https://drive.google.com/file/d/1PoJSZpyO4nDKNTKmQRp5_BhL1w_7wSxf/view)
+https://drive.google.com/file/d/1PoJSZpyO4nDKNTKmQRp5_BhL1w_7wSxf/view
